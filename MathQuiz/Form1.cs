@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,9 +23,14 @@ namespace MathQuiz
         int dividend;
         int divisor;
         int timeLeft;
+        int addSoundCount = 0;
+        int minusSoundCount = 0;
+        int multiplySoundCount = 0;
+        int divideSoundCount = 0;
 
         public void StartTheQuiz()
         {
+            
             addend1 = randomizer.Next(51);
             addend2 = randomizer.Next(51);
             plusLeftLabel.Text = addend1.ToString();
@@ -53,6 +59,10 @@ namespace MathQuiz
 
             timeLeft = 30;
             timeLabel.Text = "30 seconds";
+            if (timeLeft <= 5)
+            {
+                timeLabel.BackColor = Color.Red;
+            }
             timer1.Start();
         }
 
@@ -87,22 +97,31 @@ namespace MathQuiz
                 // got the answer right. Stop the timer  
                 // and show a MessageBox.
                 timer1.Stop();
+                timeLabel.BackColor = Color.Empty;
                 MessageBox.Show("You got all the answers right!",
                                 "Congratulations!");
                 StartButton.Enabled = true;
+               
             }
             else if (timeLeft > 0)
             {
                 // Display the new time left
                 // by updating the Time Left label.
+                if (timeLeft <= 6)
+                {
+                    timeLabel.BackColor = Color.Red;
+                }
                 timeLeft = timeLeft - 1;
                 timeLabel.Text = timeLeft + " seconds";
+                playSimpleSound();
+
             }
             else
             {
                 // If the user ran out of time, stop the timer, show 
                 // a MessageBox, and fill in the answers.
                 timer1.Stop();
+                timeLabel.BackColor = Color.Empty;
                 timeLabel.Text = "Time's up!";
                 MessageBox.Show("You didn't finish in time.", "Sorry");
                 sum.Value = addend1 + addend2;
@@ -115,6 +134,7 @@ namespace MathQuiz
 
         private bool CheckTheAnswer()
         {
+            
             if ((addend1 + addend2 == sum.Value)
                 && (minuend - subtrahend == difference.Value)
                 && (multiplicand * multiplier == product.Value)
@@ -132,6 +152,32 @@ namespace MathQuiz
             {
                 int lengthOfAnswer = answerBox.Value.ToString().Length;
                 answerBox.Select(0, lengthOfAnswer);
+            }
+        }
+
+        private void playSimpleSound()
+        {
+            SoundPlayer simpleSound = new SoundPlayer(@"c:\Windows\Media\chimes.wav");
+          
+            if (addend1 + addend2 == sum.Value && addSoundCount == 0)
+            {
+                simpleSound.Play();
+                addSoundCount++;
+            }
+            else if (minuend - subtrahend == difference.Value && minusSoundCount == 0)
+            {
+                simpleSound.Play();
+                minusSoundCount++;
+            }
+            else if (multiplicand * multiplier == product.Value && multiplySoundCount == 0)
+            {
+                simpleSound.Play();
+                multiplySoundCount++;
+            }
+            else if (dividend / divisor == quotient.Value && divideSoundCount == 0)
+            {
+                simpleSound.Play();
+                divideSoundCount++;
             }
         }
     }
