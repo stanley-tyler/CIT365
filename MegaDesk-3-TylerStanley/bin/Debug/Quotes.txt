@@ -1,7 +1,0 @@
-
-Tyler,5,5,Oak,5
-Tyler,24,5,Oak,24,3 day
-Tyler,24,5,Oak,24,3 day
-Tyler,24,5,Oak,24,3 day,1286
-Tyler,25,5,Pine,25,3 day,1185
-Tyler,24,5,Rosewood,24,3 day,1386
