@@ -1,0 +1,14 @@
+C:\Users\mrtyl\Desktop\Software Engineering\MegaDesk-3-TylerStanley\MegaDesk-3-TylerStanley\obj\Debug\MegaDesk-3-TylerStanley.csprojResolveAssemblyReference.cache
+C:\Users\mrtyl\Desktop\Software Engineering\MegaDesk-3-TylerStanley\MegaDesk-3-TylerStanley\obj\Debug\MegaDesk_3_TylerStanley.AddQuote.resources
+C:\Users\mrtyl\Desktop\Software Engineering\MegaDesk-3-TylerStanley\MegaDesk-3-TylerStanley\obj\Debug\MegaDesk_3_TylerStanley.MainMenu.resources
+C:\Users\mrtyl\Desktop\Software Engineering\MegaDesk-3-TylerStanley\MegaDesk-3-TylerStanley\obj\Debug\MegaDesk_3_TylerStanley.Properties.Resources.resources
+C:\Users\mrtyl\Desktop\Software Engineering\MegaDesk-3-TylerStanley\MegaDesk-3-TylerStanley\obj\Debug\MegaDesk-3-TylerStanley.csproj.GenerateResource.Cache
+C:\Users\mrtyl\Desktop\Software Engineering\MegaDesk-3-TylerStanley\MegaDesk-3-TylerStanley\obj\Debug\MegaDesk-3-TylerStanley.csproj.CoreCompileInputs.cache
+C:\Users\mrtyl\Desktop\Software Engineering\MegaDesk-3-TylerStanley\MegaDesk-3-TylerStanley\bin\Debug\MegaDesk-3-TylerStanley.exe.config
+C:\Users\mrtyl\Desktop\Software Engineering\MegaDesk-3-TylerStanley\MegaDesk-3-TylerStanley\bin\Debug\MegaDesk-3-TylerStanley.exe
+C:\Users\mrtyl\Desktop\Software Engineering\MegaDesk-3-TylerStanley\MegaDesk-3-TylerStanley\bin\Debug\MegaDesk-3-TylerStanley.pdb
+C:\Users\mrtyl\Desktop\Software Engineering\MegaDesk-3-TylerStanley\MegaDesk-3-TylerStanley\obj\Debug\MegaDesk-3-TylerStanley.exe
+C:\Users\mrtyl\Desktop\Software Engineering\MegaDesk-3-TylerStanley\MegaDesk-3-TylerStanley\obj\Debug\MegaDesk-3-TylerStanley.pdb
+C:\Users\mrtyl\Desktop\Software Engineering\MegaDesk-3-TylerStanley\MegaDesk-3-TylerStanley\bin\Debug\CsvHelper.dll
+C:\Users\mrtyl\Desktop\Software Engineering\MegaDesk-3-TylerStanley\MegaDesk-3-TylerStanley\bin\Debug\CsvHelper.xml
+C:\Users\mrtyl\Desktop\Software Engineering\MegaDesk-3-TylerStanley\MegaDesk-3-TylerStanley\obj\Debug\MegaDesk_3_TylerStanley.SearchQuotes.resources
