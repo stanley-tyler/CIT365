@@ -1,0 +1,1 @@
+C:\Users\mrtyl\source\repos\HelloWorldUWP\HelloWorldUWP\HelloWorldUWP.csproj;x86
